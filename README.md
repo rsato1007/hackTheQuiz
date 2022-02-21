@@ -1,4 +1,4 @@
-# Quiz App (Name TBD)
+# Hack The Quiz (Name TBD)
 Simple study app for programmers to utilize. Built using Django and React
 
 ## Table of Contents
@@ -13,12 +13,17 @@ This project is being developed as a simple study app for programmers to keep up
 
 ## Technologies
 - Django
+- Django REST framework
 - React
 - Node.js
-- Postgresql
+- PostgreSQL
 
 ## Development Process
 The development process for this app will be a little different from previous projects as I am utilizing a scrum based method designed with single programmer in mind.
+
+Additional resources being used in the development process:
+- [Figma](https://www.figma.com/file/MidNKlLLUH2geB3GXSq796/Quiz_App?node-id=0%3A1)
+- [Trello Board](https://trello.com/b/ev2h3lGt/quiz-app-board)
 
 ## Status
 At the time of this writing, I am working on planning sprint one and wanted to get the basic files up on Github.
