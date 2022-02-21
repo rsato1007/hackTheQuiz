@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import SplashPage from "./containers/SplashPage";
 
-const App = () => {
-  return (
-    <div>Hello, World!</div>
-  )
+export default function App() {
+    return (
+        <div>
+            <SplashPage />
+        </div>
+    )
 }
-
-export default App
