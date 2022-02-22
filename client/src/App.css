@@ -1,4 +1,7 @@
-/* I like to keep universal styles inside the App.css file because it's much easier to find than doing it elsewhere */
+/* I like to keep universal styles inside the App.css file because it's 
+much easier to find than doing it elsewhere */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap');
 
 body {
     margin: 0;
@@ -36,5 +39,8 @@ body {
 }
 
 /* Universal Variables Section Start */
-
+/* FONTS */
+:root {
+    --font-spectral: 'Spectral SC', serif;
+}
 /* Universal Variables Section End */

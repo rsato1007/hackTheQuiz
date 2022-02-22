@@ -4,9 +4,11 @@ import './style.css';
 export default function NavBar() {
     return (
         <div className='NavBarContainer'>
-            <p>Hack The Quiz</p>
-            <a>Sign Up</a>
-            <a>Log in</a>
+            <p className='navbarlogo'>Hack The Quiz</p>
+            <div className='navbarlinks'>
+                <a className='link'>Sign Up</a>
+                <a className='link'>Log in</a>
+            </div>
         </div>
     )
 }
