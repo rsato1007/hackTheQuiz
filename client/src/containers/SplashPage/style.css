@@ -1,0 +1,15 @@
+.splashPageContainer {
+    text-align: center;
+    padding: 5vw 0;
+    color: white;
+    font-family: var(--font-lato);
+}
+
+.splashPageHeader {
+    font-size: 2rem;
+}
+
+.splashPageText {
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+}

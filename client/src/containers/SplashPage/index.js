@@ -3,9 +3,9 @@ import './style.css';
 
 export default function SplashPage() {
     return (
-        <div>
-            <h1>Quiz App</h1>
-            <p>With quiz app, you can study programming concepts whenever, wherever so you can stay on top of your game.</p>
+        <div className='splashPageContainer'>
+            <h1 className='splashPageHeader'>Quiz App</h1>
+            <p className='splashPageText'>With quiz app, you can study programming concepts whenever, wherever so you can stay on top of your game.</p>
         </div>
     )
 }

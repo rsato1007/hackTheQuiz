@@ -1,7 +1,7 @@
 /* I like to keep universal styles inside the App.css file because it's 
 much easier to find than doing it elsewhere */
 
-@import url('https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans+Condensed:wght@300&family=Spectral+SC&display=swap');
 
 body {
     margin: 0;
@@ -42,5 +42,7 @@ body {
 /* FONTS */
 :root {
     --font-spectral: 'Spectral SC', serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-open-sans: 'Open Sans Condensed', sans-serif;
 }
 /* Universal Variables Section End */
