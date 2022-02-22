@@ -1,0 +1,36 @@
+.NavBarContainer {
+    border-bottom: 1px solid white;
+    color: white;
+    display: flex;
+    font-family: var(--font-spectral);
+    font-weight: bold;
+    padding: 1em 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbarlogo {
+    height: 100%;
+    line-height: 100%;
+    float: left;
+    margin-left: 10vw;
+}
+
+.navbarlinks {
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 100%;
+    line-height: 100%;
+    margin-right: 10vw;
+    align-self: center;
+}
+
+.link {
+    margin-left: 30px;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

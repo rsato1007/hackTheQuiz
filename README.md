@@ -1,5 +1,5 @@
 # Hack The Quiz (Name TBD)
-Simple study app for programmers to utilize. Built using Django and React
+Simple study for programmers to quiz themselves on concepts not readily easy to practice program. 
 
 ## Table of Contents
 - General Information
@@ -9,7 +9,7 @@ Simple study app for programmers to utilize. Built using Django and React
 - Future Updates
 
 ## General Information
-This project is being developed as a simple study app for programmers to keep up on their programming concepts. I built this app because I wanted a place where I can quiz myself and study programming concepts that a little hard to implement in pure coding practice. While many tools exist out there that can achieve the same result, I wanted to practice building an app using Django and React plus eventually gamify the app for better user engagement.
+This project is being developed as a simple study app for programmers to keep up on their programming concepts. I built this app because I wanted a place where I can quiz myself and study programming concepts that a little hard to implement in pure coding practice. While many tools exist out there that can achieve the same result, I wanted to practice building an app using Django and React plus eventually gamify the app for better user engagement. Furthermore, this project will serve as a part of my portfolio.
 
 ## Technologies
 - Django
