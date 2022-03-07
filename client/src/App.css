@@ -14,7 +14,7 @@ body {
     background: linear-gradient(-45deg, #43A0BC, #4364BC, #43BC9B);
     background-size: 400% 400%;
     position: relative;
-    animation: change 10s ease-in-out infinite;
+    animation: change 7.5s ease-in-out infinite;
 }
 
 .websiteContent {
