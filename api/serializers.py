@@ -2,12 +2,23 @@ from rest_framework import serializers
 from .models import Subject, Choice, Question
 
 # Documentation can be found here: https://www.django-rest-framework.org/tutorial/1-serialization/#creating-a-serializer-class
-class SubjectSerializer(serializers.Serializer):
-    name = serializers.CharField(read_only=True)
+class ChoiceSerializer(serializers.ModelSerializer):
+    # question = serializers.PrimaryKeyRelatedField(read_only=True)
 
-class QuestionSerializer(serializers.Serializer):
-    question = serializer.CharField(read_only=True)
+    class Meta:
+        model = Choice
+        fields = ['choice', 'correct']
 
-class ChoiceSerializer(serializers.Serializer):
-    choice = serializer.CharField(read_only=True)
-    correct = serializer.BooleanField
+class QuestionSerializer(serializers.ModelSerializer):
+    # subject = serializers.PrimaryKeyRelatedField(read_only=True)
+    choices = ChoiceSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Question
+        fields = ['question', 'choices']
+
+class SubjectSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Subject
+        fields = ['name', 'id']
