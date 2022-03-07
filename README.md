@@ -1,4 +1,4 @@
-# Hack The Quiz (Name TBD)
+# Programmer's Quizzer
 Simple study for programmers to quiz themselves on concepts not readily easy to practice program. 
 
 ## Table of Contents
