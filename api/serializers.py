@@ -7,7 +7,7 @@ class ChoiceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Choice
-        fields = ['choice', 'correct']
+        fields = ['text', 'is_correct']
 
 class QuestionSerializer(serializers.ModelSerializer):
     # subject = serializers.PrimaryKeyRelatedField(read_only=True)
@@ -15,7 +15,7 @@ class QuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Question
-        fields = ['question', 'choices']
+        fields = ['text', 'answer_desc', 'choices']
 
 class SubjectSerializer(serializers.ModelSerializer):
 

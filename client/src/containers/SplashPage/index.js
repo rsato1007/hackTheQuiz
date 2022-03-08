@@ -50,7 +50,7 @@ export default function SplashPage() {
                 />
             }
             {showQuestions &&
-                <QuestionsContainer />
+                <QuestionsContainer currentSubject={currentSubject}/>
             }
         </div>
     )

@@ -13,6 +13,6 @@ class Subjects(APIView):
 
 class Questions(APIView):
     def get(self, request, pk, format=None):
-        questions = Question.objects.filter(pk=pk)
+        questions = Question.objects.filter(subject=pk)
         serializer = QuestionSerializer(questions, many=True)
         return Response(serializer.data)
