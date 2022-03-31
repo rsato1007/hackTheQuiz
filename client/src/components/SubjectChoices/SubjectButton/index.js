@@ -1,15 +1,10 @@
 import React from 'react';
 import './style.css';
 
-export default function SubjectButton({ setShowSubjects, setShowQuestions, setCurrentSubject, id, subject }) {
+export default function SubjectButton({ changeToQuestions, setCurrentSubject, id, subject }) {
     const handleClick = ({ target }) => {
         setCurrentSubject(id);
-        setShowSubjects((prev) => {
-            return !prev;
-        });
-        setShowQuestions((prev) => {
-            return !prev;
-        });
+        changeToQuestions();
     } 
 
     return (

@@ -4,15 +4,14 @@ import './style.css';
 // Import components
 import SubjectButton from './SubjectButton';
 
-export default function SubjectChoices({ setShowSubjects, setShowQuestions, setCurrentSubject, subjects }) {
+export default function SubjectChoices({ changeToQuestions, setCurrentSubject, subjects }) {
     return (
         <div>
             <div>Choose a Subject to Review</div>
             {subjects.map((subject) => {
                 return (
                     <SubjectButton 
-                        setShowSubjects={setShowSubjects}
-                        setShowQuestions={setShowQuestions}
+                        changeToQuestions={changeToQuestions}
                         setCurrentSubject={setCurrentSubject}
                         key={subject.id}
                         id={subject.id}

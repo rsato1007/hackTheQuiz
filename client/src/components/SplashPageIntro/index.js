@@ -1,15 +1,9 @@
 import React from 'react';
 import './style.css';
 
-export default function SplashPageIntro({ setShowIntro, setShowSubjects }) {
+export default function SplashPageIntro({ changeToSubjects }) {
     const handleClick = ({ target }) => {
-        setShowIntro((prev) => {
-            return !prev;
-        });
-
-        setShowSubjects((prev) => {
-            return !prev;
-        })
+        changeToSubjects();
     };
 
     return (
