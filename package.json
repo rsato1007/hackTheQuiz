@@ -32,6 +32,7 @@
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.6.0",
+    "jest": "^27.5.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.69.1",
     "webpack-bundle-tracker": "^0.4.3",

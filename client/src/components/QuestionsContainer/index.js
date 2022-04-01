@@ -13,14 +13,13 @@ import Choices from './Choices';
 // Visually indicate if option was correct or incorrect
 // add text explaining if option wasn't correct.
 
-export default function QuestionsContainer({ currentSubject }) {
-    const [questions, setQuestions] = useState('');
+export default function QuestionsContainer({ changeToResults, currentSubject, setQuestions, questions, setCorrectNum }) {
     const [questionNum, setQuestionNum] = useState(0);
-    const [correctNum, setCorrectNum] = useState(0);
     const [showNextButton, setShowNextButton] = useState(false);
 
     useEffect(() => {
         getQuestions(currentSubject);
+        setCorrectNum(0);
     }, []);
 
     const getQuestions = (subjectPK) => {
@@ -41,19 +40,16 @@ export default function QuestionsContainer({ currentSubject }) {
         e.preventDefault();
         if (!showNextButton) {
             if (userChoice) {
-                console.log("That choice was correct");
                 setCorrectNum((prev) => {
                     return prev + 1
                 });
-            } else {
-                console.log("Not Nice");
             }
             setShowNextButton((prev) => {
                 return !prev;
             });
         } else if (showNextButton) {
             if (questionNum > questions.length - 2) {
-                console.log("This is the end!", correctNum);
+                changeToResults();
             } else {
                 setQuestionNum((prev) => {
                     return prev + 1

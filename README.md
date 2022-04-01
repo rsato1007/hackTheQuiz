@@ -19,7 +19,7 @@ This project is being developed as a simple study app for programmers to keep up
 - PostgreSQL
 
 ## Development Process
-The development process for this app will be a little different from previous projects as I am utilizing a scrum based method designed with single programmer in mind.
+The development process for this app will be a little different from previous projects as I am utilizing a scrum based method designed with single programmer in mind. I am also utilizing Jest for unit testing to get practice doing unit testing.
 
 Additional resources being used in the development process:
 - [Figma](https://www.figma.com/file/MidNKlLLUH2geB3GXSq796/Quiz_App?node-id=0%3A1)
