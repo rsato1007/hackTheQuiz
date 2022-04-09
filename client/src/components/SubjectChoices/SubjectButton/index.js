@@ -8,9 +8,9 @@ export default function SubjectButton({ changeToQuestions, setCurrentSubject, id
     } 
 
     return (
-        <div>
-            <div>{subject}</div>
-            <button onClick={handleClick}>Start</button>
+        <div className='individualSubject'>
+            <div className='subjectChoice'>{subject}</div>
+            <button onClick={handleClick} className="indivSubjectButton">Start</button>
         </div>
     )
 }

@@ -1,0 +1,31 @@
+.individualSubject {
+   border: 1px solid white;
+   border-radius: 10px;
+   height: 12vw;
+   width: 12vw;
+   background: rgba(255, 255, 255, 0.1);
+   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.subjectChoice {
+    margin-top: 33%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.indivSubjectButton {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px solid white;
+    border-radius: 12px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 2vw;
+    margin-top: 20px;
+    width: 5vw;
+}
+
+.indivSubjectButton:hover {
+    background: rgba(0, 0, 0, 0.1);
+}

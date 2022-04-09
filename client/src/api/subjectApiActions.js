@@ -1,3 +1,4 @@
+// All api calls for anything pertaining to subject questions
 import clientApi from "./clientApi";
 
 const getSubjects = () => {

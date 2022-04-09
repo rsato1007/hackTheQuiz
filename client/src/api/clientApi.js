@@ -1,3 +1,4 @@
+// A seperate file for creating Axios instance for better organization.
 import axios from "axios"
 
 console.log('Whats that env?', process.env.NODE_ENV);
