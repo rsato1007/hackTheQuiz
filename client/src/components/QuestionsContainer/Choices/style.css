@@ -1,0 +1,26 @@
+.questionChoice {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px white solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+    display: block;
+    font-weight: bold;
+    height: 50px;
+    margin: 15px auto;
+    width: 50%;
+}
+
+.questionChoice:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#incorrectChoice {
+    background: rgba(250, 0, 0, 0.10);
+    border: 1px #FA0000 solid;
+}
+
+#correctChoice {
+    background: rgba(2, 255, 0, 0.10);
+    border: 1px #05FF00 solid;
+}

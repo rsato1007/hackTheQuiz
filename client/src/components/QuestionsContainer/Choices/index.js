@@ -3,8 +3,17 @@ import './style.css';
 
 export default function Choices({ choice, showNextButton, handleClick }) {
     return (
-        <button onClick={(e) => handleClick(e, choice.is_correct)} disabled={showNextButton}>
-            {choice.text}
-        </button>
+        <div>
+            {choice.is_correct &&
+                <button onClick={(e) => handleClick(e, choice.is_correct)} disabled={showNextButton} className="questionChoice correct">
+                    {choice.text}
+                </button> 
+            }
+            {!(choice.is_correct) &&
+                <button onClick={(e) => handleClick(e, choice.is_correct)} disabled={showNextButton} className="questionChoice">
+                    {choice.text}
+                </button> 
+            }
+        </div>
     )
 }
