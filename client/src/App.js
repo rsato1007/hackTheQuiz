@@ -30,3 +30,12 @@ export default function App() {
         </Router>
     )
 }
+
+/*
+    Try to append the current key hash onto an existing RPC
+    to the desired server that hasn't been sent yet.
+*/
+
+const receivedValidHeartbeat = () => {
+    // Insert code
+}
