@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 // Renders out the results page.
 export default function Results({ changeToIntro, retakeQuiz, questionsNum, correctNum }) {
@@ -24,21 +25,22 @@ export default function Results({ changeToIntro, retakeQuiz, questionsNum, corre
     }
 
     return (
-        <div>
-            <div>Quiz Results</div>
-            <div>
-                <div>
-                    <p>{Math.round(100 * (correctNum/questionsNum)) + "%"}</p>
+        <div className="resultsContainer">
+            <div className="quizResults">Quiz Results</div>
+            <div className="quizResultsInfo">
+                <div className="quizNumbers">
+                    <p className="percent">{Math.round(100 * (correctNum/questionsNum)) + "%"}</p>
                     <p>{commentOnResults(correctNum/questionsNum)}</p>
                 </div>
+                <div className="quizResultsLine"></div>
                 <div>
                     <p>{correctNum} Correct</p>
                     <p>{questionsNum - correctNum} to improve on</p>
                 </div>
             </div>
             {/* Two buttons to give users the option to go to the main page or to return home. */}
-            <button onClick={(e) => handleClick('leave', e)}>Return Home</button>
-            <button onClick={(e) => handleClick('retake', e)}>Retake Quiz</button>
+            <button onClick={(e) => handleClick('leave', e)} className="returnHomeButton">Return Home</button>
+            <button onClick={(e) => handleClick('retake', e)} className="retakeButton">Retake Quiz</button>
         </div>
     )
 }
