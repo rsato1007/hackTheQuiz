@@ -10,6 +10,7 @@ psycopg2-binary = "*"
 django-cors-headers = "*"
 django-rest-auth = "*"
 django-allauth = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 

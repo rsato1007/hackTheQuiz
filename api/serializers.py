@@ -3,8 +3,33 @@
 # ModelSerializers: https://www.django-rest-framework.org/api-guide/serializers/#modelserializer
 
 from rest_framework import serializers
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.settings import api_settings
 from .models import Subject, Choice, Question, User
 
+# Serializer the user for login serializer
+class UserSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email']
+        read_only_field = ['created']
+
+class LoginSerializer(TokenObtainPairSerializer):
+
+    def validate(self, attrs):
+        data = super().validate(attrs)
+
+        refresh = self.get_token(self.user)
+
+        data['user'] = UserSerializer(self.user).data
+        data['refresh'] = str(refresh)
+        data['access'] = str(refresh.access_token)
+
+        if api_settings.UPDATE_LAST_LOGIN:
+            update_last_login(None, self.user)
+
+        return data
 # The original article I am using starts by creating a user serializer than crafts
 # a serializer for registration and one for logging in. I am gonna
 # try and just do a register for now.
