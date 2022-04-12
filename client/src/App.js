@@ -9,6 +9,7 @@ import './App.css';
 
 // Components Imports
 import SplashPage from "./containers/SplashPage";
+import RegistrationPage from './containers/RegistrationPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
@@ -23,7 +24,8 @@ export default function App() {
             <section className='websiteContent'>
                 <NavBar />
                 <Routes>
-                    <Route path="" element={<SplashPage />} />
+                    <Route path="/" element={<SplashPage />} />
+                    <Route path= "register/" element={<RegistrationPage />} />
                 </Routes>
                 <Footer />
             </section>

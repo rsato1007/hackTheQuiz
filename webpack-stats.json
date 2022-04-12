@@ -1,1 +1,1 @@
-{"status":"done","publicPath":"static/client/","chunks":{"client":[{"name":"client-e6a29931cba4a0114e7b.js","publicPath":"static/client/client-e6a29931cba4a0114e7b.js","path":"/home/rsato2021/projects/hackTheQuiz/config/client/static/client/client-e6a29931cba4a0114e7b.js"}]}}
+{"status":"done","publicPath":"/static/client/","chunks":{"client":[{"name":"client-c8b9f4d6b566c1093ad3.js","publicPath":"/static/client/client-c8b9f4d6b566c1093ad3.js","path":"/home/rsato2021/projects/hackTheQuiz/config/client/static/client/client-c8b9f4d6b566c1093ad3.js"}]}}

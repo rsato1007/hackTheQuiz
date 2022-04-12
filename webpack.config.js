@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve('./client/static/client/'),
     filename: '[name]-[hash].js',
-    publicPath: 'static/client/',
+    publicPath: '/static/client/',
   },
   plugins: [
     new CleanWebpackPlugin(),

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './style.css';
 
 export default function NavBar() {
@@ -6,7 +8,7 @@ export default function NavBar() {
         <div className='NavBarContainer'>
             <p className='navbarlogo'>Programmer's Quizzer</p>
             <div className='navbarlinks'>
-                <a className='link'>Sign Up</a>
+                <Link className='link' to='/register'>Sign Up</Link>
                 <a className='link'>Log in</a>
             </div>
         </div>
